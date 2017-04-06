@@ -108,7 +108,8 @@ public class Main extends Application {
         Button action = new Button("Save");
         action.setOnAction(event -> {
             FileChooser fileChooser = new FileChooser();
-            fileChooser.setInitialDirectory(new File(""));
+            // set suitable
+//            fileChooser.setInitialDirectory(new File(""));
             fileChooser.setInitialFileName("map.txt");
             File file = fileChooser.showSaveDialog(primaryStage);
             if (file != null)
